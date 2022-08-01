@@ -10,7 +10,7 @@ html(lang="en")
         link(rel='stylesheet' href='css/libs/bootstrap.css')
         link(rel='stylesheet' href='css/style.css')
     body 
-        h1 Test Heading
+        h1 Test Heading 3
         ul.fs-1.fw-bold.text-white-50.bg-dark
             each i in jo 
                 li=`${i} => Hello ${i}`
@@ -24,3 +24,5 @@ html(lang="en")
         .text-bg-info.p-3(class='border border-danger') Info with contrasting color
         .text-bg-light.p-3 Light with contrasting color
         .text-bg-dark.p-3 Dark with contrasting color
+
+        script(src="js/test.js") 

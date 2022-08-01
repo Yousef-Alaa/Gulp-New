@@ -1,1 +1,1 @@
-function sayHello(){return{name:"d",age:555}}
+"use strict";let myname="Yousef";function sayHello(){return{name:"d",age:555}}console.log(myname),console.log(myname),console.log({myname:myname,age:55});
