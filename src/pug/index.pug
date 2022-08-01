@@ -1,0 +1,26 @@
+- var jo = Array(10).fill(null).map((r, i) => i + 1);
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Gulp New Way
+        link(rel='stylesheet' href='css/libs/bootstrap.css')
+        link(rel='stylesheet' href='css/style.css')
+    body 
+        h1 Test Heading
+        ul.fs-1.fw-bold.text-white-50.bg-dark
+            each i in jo 
+                li=`${i} => Hello ${i}`
+                br
+        .shadow-lg.p-3.mb-5.bg-body.rounded Larger shadow
+        .text-bg-primary.p-3 Primary with contrasting color
+        .text-bg-secondary.p-4 Secondary with contrasting color
+        .text-bg-success.p-3 Success with contrasting color
+        .text-bg-danger.p-3 Danger with contrasting color
+        .text-bg-warning.p-3 Warning with contrasting color
+        .text-bg-info.p-3(class='border border-danger') Info with contrasting color
+        .text-bg-light.p-3 Light with contrasting color
+        .text-bg-dark.p-3 Dark with contrasting color

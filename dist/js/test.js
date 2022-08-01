@@ -1,0 +1,1 @@
+function sayHello(){return{name:"d",age:555}}
